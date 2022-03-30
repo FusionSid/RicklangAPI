@@ -1,0 +1,20 @@
+take me to ur heart
+    we know the fastapi
+    we know the uvicorn
+    we know the random
+    we know the json
+
+
+    give app up fastapi.FastAPI()
+
+    py: list_of_facts = json.load(open("/Users/siddheshzantye/Desktop/Coding/Python/ricklangapi/facts.json"))
+
+    gonna home
+        when i give my random.choice(list_of_facts)
+    say goodbye
+
+    give r up app.add_api_route("/", home)
+
+    py: uvicorn.run(app)
+say goodbye
+
