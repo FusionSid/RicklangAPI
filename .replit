@@ -1,0 +1,2 @@
+language = "python3"
+run = "python3 rickroll-lang/src-py/RickRoll.py /home/runner/RicklangAPI/main.rickroll"

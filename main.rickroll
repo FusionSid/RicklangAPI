@@ -7,7 +7,7 @@ take me to ur heart
 
     give app up fastapi.FastAPI()
 
-    py: list_of_facts = json.load(open("/Users/siddheshzantye/Desktop/Coding/Python/ricklangapi/facts.json"))
+    py: list_of_facts = json.load(open("/home/runner/RicklangAPI/facts.json"))
 
     gonna home
         when i give my random.choice(list_of_facts)
@@ -15,6 +15,6 @@ take me to ur heart
 
     give r up app.add_api_route("/", home)
 
-    py: uvicorn.run(app)
+    py: uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
 say goodbye
 
