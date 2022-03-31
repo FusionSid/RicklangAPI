@@ -1,0 +1,22 @@
+take me to ur heart
+    gonna LinearSearch arr, target
+
+        give index up 0
+
+        together forever with index is less than length(arr)
+            and if u ask me how im feeling arr[index] is target
+                i just wanna tell u how im feeling "Found in index " + to_string(index) + "\n"
+                when i give my index it will be completely
+            say goodbye
+            give index up index + 1
+        say goodbye
+
+        i just wanna tell u how im feeling to_string(target) + " is not found! :( \n"
+
+    say good bye
+
+    give arr up [6, 7, 5, 9, 12]
+    LinearSearch(arr, 12)
+    LinearSearch(arr, 7)
+    LinearSearch(arr, 0)
+say goodbye
