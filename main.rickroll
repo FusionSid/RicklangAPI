@@ -1,20 +1,54 @@
 take me to ur heart
+    # Imports
     we know the fastapi
     we know the uvicorn
     we know the random
     we know the json
 
-
+    # The fastapi app
     give app up fastapi.FastAPI()
 
-    py: list_of_facts = json.load(open("/home/runner/RicklangAPI/facts.json"))
+    # Get list of facts/compliment/roasts from the json files
+    give list_of_facts up json.load(open("/home/runner/RicklangAPI/data/facts.json"))
+    give list_of_roasts up json.load(open("/home/runner/RicklangAPI/data/roastlist.json"))
+    give list_of_compliments up json.load(open("/home/runner/RicklangAPI/data/compliment.json"))
 
+
+    # home function for the "/" endpoint
     gonna home
+        when i give my {"Hello World" : "From Rickroll-Lang"}
+    say goodbye
+
+
+    # function for the "/fact" endpoint
+    gonna fact
+        # picks a random fact from the list
         when i give my random.choice(list_of_facts)
     say goodbye
 
-    give r up app.add_api_route("/", home)
 
-    py: uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
+    # function for the "/compliment" endpoint
+    gonna compliment
+        # picks a random compliment from the list
+        when i give my random.choice(list_of_compliments)
+    say goodbye
+
+
+    # function for the "/roast" endpoint
+    gonna roast
+        # picks a random roast from the list
+        when i give my random.choice(list_of_roasts)
+    say goodbye
+
+
+    # Adds the function to the app (cant do decorators)
+    give api_home_route up app.add_api_route("/", home)
+    give api_fact_route up app.add_api_route("/fact", fact)
+    give api_roast_route up app.add_api_route("/roast", roast)
+    give api_compliment_route up app.add_api_route("/compliment", compliment)
+
+
+    # Runs the app
+    py: uvicorn.run(app)
 say goodbye
 
